@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Gayathri:100,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="setup.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7aa5d1a72c.js" crossorigin="anonymous"></script>
+    <title>Cocktail Generator</title>
+</head>
+
+<body>
+    <!-- Landing Page start -->
+    <header>
+        <div class="wrapper header">
+            <div class="headerInfo">
+                <a href="#start">
+                    <h1 class="glow">Cocktails</h1>
+                    <div class="hvr-icon-rotate">
+                        <i class="fas fa-cocktail glow hvr-icon"></i>
+                    </div>
+                    <h2 class="glow">Click Here to Start</h2>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Landing Page end -->
+
+    <!-- Drink Choice Page start -->
+    <main id="start" class="hide">
+        <div class="wrapper main">
+            <div class="options">
+                <h3>Pick Your Poison</h3>
+                <ul class="boozeList">
+                    <li id="gin"><a class="choice" tabindex="0">Gin</a></li>
+                    <li id="vodka"><a class="choice" tabindex="0">Vodka</a></li>
+                    <li id="whiskey"><a class="choice" tabindex="0">Whiskey</a></li>
+                    <li id="rum"><a class="choice" tabindex="0">Rum</a></li>
+                    <li id="random"><a class="choice" tabindex="0">Whatever</a></li>
+                </ul>
+            </div>
+            <div class="displayCocktail">
+            </div>
+        </div>
+    </main>
+    <footer class="hide">
+        <div class="wrapper footer">
+            <p>Powered by <a href="https://www.thecocktaildb.com">The Cocktail DB</a></p>
+        </div>
+    </footer>
+    <script src='https://code.jquery.com/jquery-3.4.0.min.js'
+        integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

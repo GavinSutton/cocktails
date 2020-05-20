@@ -1,0 +1,380 @@
+/* STRIPPING STYLES START */
+
+* {
+    transition: 0.5s all ease;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* STRIPPING STYLES END */
+
+
+/* GENERAL STYLES START */
+
+a:focus {
+    border-bottom: 1px solid blue;
+}
+
+html {
+    font-size: 125%;
+    scroll-behavior: smooth
+}
+
+body {
+    font-family: 'Gayathri', sans-serif;
+    font-weight: 100;
+    overflow-x: hidden;
+}
+
+.header,
+.main,
+.footer, 
+.cocktailName, 
+.displayCocktail.stylings {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header,
+.main,
+.footer {
+    flex-direction: column;
+}
+
+h1, 
+h2, 
+h3, 
+h4,
+p,
+.icon,
+.ingredients li {
+    font-weight: 100;
+    color: rgb(255, 206, 214);
+    text-shadow: 0 0 7px rgb(243, 142, 159), 0 0 10px rgb(236, 86, 169);
+}
+
+h1,
+h2, 
+h3, 
+h4 {
+    /* font-size: 40px; */
+    letter-spacing: 5px;
+    /* margin-top: 50px; */
+}
+
+h4 {
+    margin-top: 10px;
+}
+
+p {
+    font-size: 25px;
+}
+
+.hide {
+    display: none;
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* GENERAL STYLES END */
+
+
+/* HEADER STYLES START */
+
+header {
+    background: url(./assets/wood-bg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.header {
+    height: inherit;
+}
+
+.headerInfo {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 4rem;
+    letter-spacing: 15px;
+}
+
+i {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 3rem;
+    width: 50vw;
+    text-shadow: 2px 1px 7px pink;
+    margin: 10px 0 40px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+
+/* HEADER STYLES END */
+
+/* MAIN STYLES START */
+
+main {
+    background: url(./assets/lights-bg.jpg);
+    height: 100vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+.boozeList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.choice {
+    font-size: 40px;
+    color: aliceblue;
+}
+
+.choice:hover {
+    border-bottom: 1px solid aliceblue;
+}
+
+.choice:hover {
+    cursor: pointer;
+}
+
+.cocktailName {
+    justify-content: center;
+    text-align: center;
+}
+
+.cocktailName p {
+    padding: 17px 15px 12px;
+    display: flex;
+}
+
+.stylings {
+    background: rgba(0, 25, 43, 0.516);
+    border: 2px solid rgb(255, 206, 214);
+    border-radius: 15px;
+    justify-content: center;
+    margin-top: 30px;
+    max-height: 70vh;
+    overflow-y: scroll;
+    width: 60%;
+    flex-direction: column;
+}
+
+.ingredients {
+    flex: 1 1 40%;
+    margin-top: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.ingredients p {
+    text-decoration: underline;
+    padding-right: 20px;
+}
+
+.ingredients ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.ingredients li {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.ingredientsAndInstructions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ingredientList {
+    padding-right: 20px;
+    border-right: 2px solid rgb(255, 206, 214);
+}
+
+.instructions {
+    color:rgb(255, 206, 214);
+    flex: 1 1 60%;
+    max-height: 400px;
+    max-width: 400px;
+    overflow: scroll;
+    text-align: center;
+}
+
+.instructions p {
+    padding: 20px;
+    font-size: 1rem;
+}
+
+.blue, 
+.instructions p, 
+.ingredients p {
+    color: rgb(192, 192, 250);
+    text-shadow: 0px 0px 5px  rgb(3, 3, 87), 0 0 10px rgb(1, 1, 39);
+}
+
+.options {
+    margin-top: 40px;
+    text-align: center;
+    width: 60vw;
+}
+
+/* MAIN STYLES END */
+
+/* FOOTER STYLES START */
+
+footer {
+    background: #00192B;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+.footer {
+    text-align: center;
+}
+
+/* FOOTER STYLES END */
+
+
+/* ANIMATIONS */
+
+.glow {
+    color: white;
+    animation: glow ease-in-out infinite alternate 1s;
+    }
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px rgb(236, 86, 169), 0 0 20px rgb(236, 86, 169), 0 0 30px rgb(236, 86, 169), 0 0 40px rgb(236, 86, 169);
+    }
+    
+    to {
+        text-shadow: 0 0 20px rgb(243, 142, 159), 0 0 20px rgb(243, 142, 159), 0 0 30px rgb(243, 142, 159), 0 0 40px rgb(243, 142, 159);
+    }
+}
+
+
+/* Icon Rotate from http://ianlunn.github.io/Hover/*/
+.hvr-icon-rotate {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.hvr-icon-rotate .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.hvr-icon-rotate:hover .hvr-icon, .hvr-icon-rotate:focus .hvr-icon, .hvr-icon-rotate:active .hvr-icon {
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+
+/* MEDIA STYLES */
+
+
+@media (max-width: 1190px) {
+    .choice {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 970px) {
+    .displayCocktail.stylings {
+        width: 80%;
+    }
+}
+
+@media (max-width: 740px) {
+    .choice {
+        font-size: 20px;
+    }
+
+    .ingredients p {
+        padding-right: 0;
+    }
+
+    .ingredientList {
+        border-right: none;
+        padding-right: 0;
+    }
+
+    .ingredientsAndInstructions {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h4 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 560px) {
+    ul {
+        flex-direction: column;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+
+
+
