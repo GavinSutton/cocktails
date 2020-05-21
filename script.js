@@ -89,9 +89,9 @@ cocktailApp.init = function () {
     $(`.headerInfo`).on(`click`, function() {
         setTimeout(function () { 
             $(`header`).addClass(`hide`)
-        }, 500);
+            $(`footer`).removeClass(`hide`)
+        }, 800);
         $(`main`).removeClass(`hide`)
-        $(`footer`).removeClass(`hide`)
     })
 }
 
