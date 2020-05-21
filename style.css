@@ -412,6 +412,13 @@ footer p {
 }
 
 @media (max-width: 430px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.2rem;
+    }
     .options::after {
         left: 165px;
     }
@@ -422,14 +429,6 @@ footer p {
 }
 
 @media (max-width: 366px) {
-    h1 {
-        font-size: 2rem;
-    }
-    
-    h2 {
-        font-size: 1.2rem;
-    }
-
     .options::after {
         left: 130px;
     }
