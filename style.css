@@ -43,8 +43,14 @@ body {
 .cocktailName, 
 .displayCocktail.stylings {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
+}
+
+.header,
+.main,
+.footer, 
+.cocktailName {
+    flex-wrap: wrap;
 }
 
 .header,
@@ -201,7 +207,7 @@ h3 {
 }
 
 .ingredients {
-    flex: 1 1 40%;
+    flex: 1 1 50%;
     margin-top: 5px;
     max-height: 50%;
     overflow: scroll;
@@ -239,7 +245,7 @@ h3 {
 
 .instructions {
     color:rgb(255, 206, 214);
-    flex: 1 1 60%;
+    flex: 1 1 50%;
     max-height: 400px;
     max-width: 400px;
     overflow: scroll;
